@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react'
 import { FaMoon } from "react-icons/fa";
 import { FaRegSun } from "react-icons/fa6";
 
+import './themetoggle.css'
+
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
@@ -17,11 +19,17 @@ export default function ThemeToggle() {
   if (!mounted) return null
 
   return (
-    <button
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="p-2 text-black rounded border-8 border-red-700"
-    >
-      {theme === 'dark' ? <FaRegSun /> : <FaMoon />}
-    </button>
+    // <button
+    //   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+    //   className=""
+    // >
+    //   {theme === 'dark' ? <FaRegSun /> : <FaMoon />}
+    // </button>
+    <>
+      <input type="checkbox" id="darkmode-toggle" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}/>
+      <label for="darkmode-toggle"></label>
+    </>
+
+
   )
 }
