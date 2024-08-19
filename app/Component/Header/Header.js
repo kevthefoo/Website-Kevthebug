@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { FaLinkedin, FaGithubSquare, FaMedium } from "react-icons/fa";
+import ThemeToggle from "@/app/Component/ThemeToggle/ThemeToggle";
+
 
 export default function Header() {
     return (
@@ -26,7 +28,7 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
-            <div>
+            <div className="flex justify-between items-center gap-4">
                 <ul className='flex justify-between items-center gap-2 border-2'>
                     <li>
                         <a href="https://github.com" title="Github"><FaGithubSquare size={28} /></a>
@@ -38,6 +40,7 @@ export default function Header() {
                         <a href="https://twitter.com" title="Twitter"><FaMedium size={28} /></a>
                     </li>
                 </ul>
+                <ThemeToggle />
             </div>
         </header>
     );
