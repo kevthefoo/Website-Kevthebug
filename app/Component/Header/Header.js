@@ -5,7 +5,7 @@ import ThemeToggle from "@/app/Component/ThemeToggle/ThemeToggle";
 
 export default function Header() {
     return (
-        <header className='flex justify-around items-center border-2 h-16'>
+        <header className='flex justify-around items-center border-2 h-16 dark:bg-neutral-900 dark:text-white transition duration-700 ease-linear'>
             <div>
                 Logo
             </div>

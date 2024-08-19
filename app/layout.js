@@ -16,18 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          <main className='dark:bg-gray-900 dark:text-white'>
-            {children}
-          </main>
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        <main className='dark:bg-neutral-900 dark:text-white transition duration-700 ease-linear'>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

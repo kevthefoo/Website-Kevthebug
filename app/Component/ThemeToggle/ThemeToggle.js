@@ -1,32 +1,39 @@
 "use client"
 
-import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
-
-import { FaMoon } from "react-icons/fa";
-import { FaRegSun } from "react-icons/fa6";
+import { useState, useEffect } from 'react'
 
 import './themetoggle.css'
 
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const [darkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  } 
+
+  // useEffect(() => {
+  //   const mainElement = document.querySelector('main')
+  //   if (darkMode) {
+  //     mainElement.classList.add('dark')
+  //   } else {
+  //     mainElement.classList.remove('dark')
+  //   }
+  // }, [darkMode])
+
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    if (darkMode) {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+    }
+  }, [darkMode])
 
-  if (!mounted) return null
-
+  
   return (
-    // <button
-    //   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-    //   className=""
-    // >
-    //   {theme === 'dark' ? <FaRegSun /> : <FaMoon />}
-    // </button>
+
     <>
-      <input type="checkbox" id="darkmode-toggle" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}/>
+      <input type="checkbox" id="darkmode-toggle" onClick={toggleDarkMode}/>
       <label for="darkmode-toggle"></label>
     </>
 
