@@ -11,16 +11,6 @@ export default function ThemeToggle() {
     setDarkMode(!darkMode)
   } 
 
-  // useEffect(() => {
-  //   const mainElement = document.querySelector('main')
-  //   if (darkMode) {
-  //     mainElement.classList.add('dark')
-  //   } else {
-  //     mainElement.classList.remove('dark')
-  //   }
-  // }, [darkMode])
-
-
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add('dark')
@@ -29,7 +19,7 @@ export default function ThemeToggle() {
     }
   }, [darkMode])
 
-  
+
   return (
 
     <>
