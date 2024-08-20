@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className='dark:bg-neutral-900 dark:text-white transition duration-700 ease-linear'>
+        <main className="transition duration-700 ease-linear dark:bg-neutral-900 dark:text-white">
           {children}
         </main>
         <Footer />
