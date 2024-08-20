@@ -6,12 +6,12 @@ import Showcase from "@/app/Home/Showcase/Showcase";
 
 export default function Home() {
   return (
-    <section>
+    <>
       <About />
       <Blog />
       <Contact />
       <Services />
       <Showcase />
-    </section>
+    </>
   );
 }
