@@ -15,10 +15,10 @@ export default function Header() {
             <a href="#skills">Skills</a>
           </li>
           <li className="hover:text-gray-500">
-            <a href="#services">Services</a>
+            <a href="#showcase">Showcase</a>
           </li>
           <li className="hover:text-gray-500">
-            <a href="#showcase">Showcase</a>
+            <a href="#services">Services</a>
           </li>
           <li className="hover:text-gray-500">
             <a href="#contact">Contact</a>

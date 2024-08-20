@@ -2,9 +2,9 @@ import "./about.css";
 
 export default function About() {
   return (
-    <section id="about" className="h-screen flex-col pt-16">
+    <section id="about" className="h-screen flex-col justify-start pt-16">
       <h1>About Me</h1>
-      <span className="text-xl text-gray-500">What am I made of</span>
+      <span className="text-xl text-gray-500">What I am made of</span>
       <div className="bubble_container">
         <div className="bubble main">Goodness</div>
         <div className="bubble mbti">INTP</div>
