@@ -3,7 +3,6 @@ import "./globals.css";
 
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
-import ThemeProvider from "@/app/Component/ThemeProvider/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
