@@ -41,7 +41,7 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="https://twitter.com" title="Twitter">
+            <a href="https://medium.com/" title="Medium">
               <FaMedium size={28} />
             </a>
           </li>

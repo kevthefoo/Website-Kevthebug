@@ -22,7 +22,7 @@ export default function ThemeToggle() {
   return (
     <>
       <input type="checkbox" id="darkmode-toggle" onClick={toggleDarkMode} />
-      <label for="darkmode-toggle"></label>
+      <label htmlFor="darkmode-toggle"></label>
     </>
   );
 }
