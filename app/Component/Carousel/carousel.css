@@ -1,0 +1,17 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  @apply dark:border-blue-700 border-black border-4;
+  width: 620px;
+  height: 345px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
