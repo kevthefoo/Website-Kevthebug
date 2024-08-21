@@ -29,7 +29,7 @@ const descriptionData = {
   },
   company: {
     value: "Disney",
-    description: "When I feel down, I always listen their music, and it remind me of my happy childhood. One of my dream is to visit every Disneyland in the world!",
+    description: "When I feel down, I always listen their music, and it reminds me of my happy childhood. One of my dream is to visit every Disneyland in the world!",
     icon: disney,
   },
   food: {
