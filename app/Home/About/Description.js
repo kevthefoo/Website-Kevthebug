@@ -12,7 +12,7 @@ const descriptionData = {
   main: {
     value: "Goodness",
     description:
-      "I always believe that goodness is the noblest virtue and put it in the first place. No matter how good you are",
+      "I always believe that goodness is the noblest virtue and put it in the first place. I will always be kind even if I have to lose!",
     icon: goodness,
   },
   mbti: {
@@ -29,12 +29,12 @@ const descriptionData = {
   },
   company: {
     value: "Disney",
-    description: "",
+    description: "When I feel down, I always listen their music, and it remind me of my happy childhood. One of my dream is to visit every Disneyland in the world!",
     icon: disney,
   },
   food: {
     value: "Sushi",
-    description: "Give me more!",
+    description: "Nigiri! Sashimi! Maki! Temaki! Uramaki! Inari! Oshi! Gunkan! Ebi! Tempura! Give me more until I choke!",
     icon: sushi,
   },
   sport: {
@@ -45,18 +45,18 @@ const descriptionData = {
   },
   film: {
     value: "Interstellar",
-    description: "Love could cross dimensions",
+    description: "Interstellar is one of my favorite films, actually I love all Christopher Nolan's films. I am a big fan of him!",
     icon: interstellar,
   },
   music: {
     value: "Piano",
     description:
-      "Not really good at...but I love playing it. Hope I could play all Hans Zimmer's masterpeices one day",
+      "Not really good at...but I love playing it. Hope I could play all Hans Zimmer's masterpeices one day.",
     icon: piano,
   },
   trait: {
     value: "Creativity",
-    description: "I always try to think outside the box",
+    description: "One of my strengths is creativity. I always like to fix problems in a surprising way. Boring is the last thing I want to be!",
     icon: creativity,
   },
 };
