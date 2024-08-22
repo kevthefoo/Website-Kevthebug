@@ -6,7 +6,8 @@ import "./hero.css";
 
 export default function Hero() {
   return (
-    <section className="items-start justify-center gap-32 pt-40">
+
+    <section className="items-start justify-around border-2 border-red-500 pt-40">
       <div className="php_image_container relative h-4/5 w-1/5">
         <Image
           priority={true}
