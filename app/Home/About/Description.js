@@ -44,8 +44,8 @@ const descriptionData = {
     icon: basketball,
   },
   film: {
-    value: "Interstellar",
-    description: "Interstellar is one of my favorite films, actually I love all Christopher Nolan's films. I am a big fan of him!",
+    value: "Movies",
+    description: "Interstellar is one of my favorite films, actually I love all Christopher Nolan's movies. I am a big fan of him!",
     icon: interstellar,
   },
   music: {
