@@ -1,4 +1,4 @@
-label {
+.toggle_label {
   width: 40px;
   height: 20px;
   position: relative;
@@ -11,7 +11,7 @@ label {
   cursor: pointer;
 }
 
-label:after {
+.toggle_label:after {
   content: "";
   width: 20px;
   height: 20px;
@@ -22,25 +22,25 @@ label:after {
   border-radius: 180px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
-input {
+.toggle_input {
   width: 0;
   height: 0;
   visibility: hidden;
 }
 
-input:checked + label {
+.toggle_input:checked + .toggle_label {
   background: #242424;
 }
-input:checked + label:after {
+.toggle_input:checked + .toggle_label:after {
   left: 40px;
   transform: translateX(-100%);
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
-label,
-label:after {
+.toggle_label,
+.toggle_label:after {
   transition: 0.5s;
 }
 
-label:active:after {
+.toggle_label:active:after {
   width: 20px;
 }
