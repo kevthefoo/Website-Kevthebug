@@ -1,16 +1,32 @@
 import Image from "next/image";
 import pfp from "@/asset/materials/pfp.png";
+import pfp_2 from "@/asset/materials/pfp_2.png";
 import HelloIcon from "./HelloIcon";
+import "./hero.css";
 
 export default function Hero() {
   return (
-    <section className="justify-around">
-      <Image
-        src={pfp}
-        alt="Kevin Caviar"
-        width={350}
-        className="pfp_image rounded-3xl"
-      />
+    <section className="items-start justify-center gap-32 pt-40">
+      <div className="php_image_container relative h-4/5 w-1/5">
+        <Image
+          priority={true}
+          loading="eager"
+          placeholder="empty"
+          src={pfp}
+          height={200}
+          alt="Kevin Caviar"
+          className="pfp_image_light absolute h-full w-full rounded-3xl object-cover"
+        />
+        <Image
+          priority={true}
+          loading="eager"
+          placeholder="empty"
+          src={pfp_2}
+          height={200}
+          alt="Kevin Caviar"
+          className="pfp_image_dark invisible absolute h-full w-full rounded-3xl object-cover opacity-0"
+        />
+      </div>
 
       <div className="flex w-1/2 flex-col">
         <h1 className="mb-4 flex items-center justify-start gap-x-3.5">
@@ -20,7 +36,7 @@ export default function Hero() {
         <h3 className="mb-4">
           <i>A Programming Enthusiasm</i>
         </h3>
-        <p className="mb-16 text-gray-700 dark:text-white">
+        <p className="mb-16">
           I found that programming is my destiny when I was 27 then I devoted in
           it with all my heart. Sometimes I wish I could learn programming
           earlier in my life, the industry and its community are just so

@@ -1,0 +1,6 @@
+.pfp_image_light,
+.pfp_image_dark {
+  transition:
+    opacity 1s ease,
+    visibility 1s ease;
+}
