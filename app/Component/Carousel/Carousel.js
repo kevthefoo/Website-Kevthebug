@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import meetjohnny from "@/asset/materials/meetjohnny.png";
 import ballersbar from "@/asset/materials/ballersbar.png";
+import bitanan from "@/asset/materials/bitanan.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -63,7 +64,15 @@ export default function App() {
           </a>
         </SwiperSlide>
 
-        <SwiperSlide></SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <a
+            href="https://bitanan-demo.vercel.app/"
+            target="_blank"
+          >
+            <Image src={bitanan} alt="showcase_3" />
+          </a>
+        </SwiperSlide>
 
         <SwiperSlide></SwiperSlide>
 

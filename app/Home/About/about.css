@@ -5,15 +5,38 @@
 }
 
 .bubble {
-  @apply absolute flex h-28 w-28 cursor-pointer items-center justify-center rounded-full border-4 border-black bg-blue-300 text-center font-semibold dark:border-blue-700 dark:text-black;
-  transform: translate(-50%, -50%);
-  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  @apply absolute flex h-28 w-28 cursor-pointer items-center justify-center rounded-full border-4 border-black bg-blue-300 text-center font-semibold dark:border-white dark:text-black;
+  transform: translate(-50%, -50%)
 }
 
 .bubble:hover {
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   transform: translate(-50%, -50%);
   animation: float 2s ease-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
 }
 
 @keyframes float {
@@ -34,6 +57,7 @@
 .bubble.main {
   top: 50%;
   left: 50%;
+  /* animation: wiggle 2s linear infinite; */
 }
 
 .mbti {

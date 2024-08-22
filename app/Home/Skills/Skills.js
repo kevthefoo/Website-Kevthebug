@@ -13,6 +13,10 @@ export default function Skills() {
             <ul className="grid grid-flow-col grid-cols-2 grid-rows-4 items-center justify-center gap-4">
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
+                JavaScript
+              </li>
+              <li className="flex items-center justify-start gap-1">
+                <HiAcademicCap />
                 React
               </li>
               <li className="flex items-center justify-start gap-1">
@@ -21,11 +25,15 @@ export default function Skills() {
               </li>
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
+                SCSS
+              </li>
+              <li className="flex items-center justify-start gap-1">
+                <HiAcademicCap />
                 Tailwindcss
               </li>
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
-                JavaScript
+                Material UI
               </li>
             </ul>
           </div>
@@ -54,6 +62,14 @@ export default function Skills() {
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
                 AWS
+              </li>
+              <li className="flex items-center justify-start gap-1">
+                <HiAcademicCap />
+                Docker
+              </li>
+              <li className="flex items-center justify-start gap-1">
+                <HiAcademicCap />
+                Fastapi
               </li>
             </ul>
           </div>
