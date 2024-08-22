@@ -34,7 +34,7 @@ export default function Conatct() {
           className="w-3/5 rounded-3xl border-2 border-gray-400 p-8"
         >
           <div className="mb-8 flex flex-col items-start justify-start">
-            <label for="name" className="mb-2">
+            <label htmlFor="name" className="mb-2">
               Name:
             </label>
             <input
@@ -47,7 +47,7 @@ export default function Conatct() {
           </div>
 
           <div className="mb-8 flex flex-col items-start justify-start">
-            <label for="email" className="mb-2">
+            <label htmlFor="email" className="mb-2">
               Email:
             </label>
             <input
@@ -60,7 +60,7 @@ export default function Conatct() {
           </div>
 
           <div className="mb-8 flex flex-col items-start justify-start">
-            <label for="message" className="mb-2">
+            <label htmlFor="message" className="mb-2">
               Message:
             </label>
             <textarea
