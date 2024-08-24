@@ -1,6 +1,5 @@
 import "./skills.css";
 import { HiAcademicCap } from "react-icons/hi2";
-import { FaAppleAlt } from "react-icons/fa";
 export default function Skills() {
   return (
     <section id="skills" className="flex-col justify-start pt-16">
@@ -33,7 +32,7 @@ export default function Skills() {
               </li>
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
-                Material UI
+                Shadcn/ui
               </li>
             </ul>
           </div>
@@ -50,6 +49,10 @@ export default function Skills() {
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
                 Node.js
+              </li>
+              <li className="flex items-center justify-start gap-1">
+                <HiAcademicCap />
+                Express. js
               </li>
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
