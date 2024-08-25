@@ -24,7 +24,7 @@ export default function Skills() {
               </li>
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
-                SCSS
+                NextUI
               </li>
               <li className="flex items-center justify-start gap-1">
                 <HiAcademicCap />
