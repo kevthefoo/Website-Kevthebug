@@ -7,7 +7,7 @@ export default function Popup({ content, onClose }) {
       onClick={onClose}
     >
       <div
-        className="relative h-1/2 w-1/3 flex flex-col p-4 justify-start items-start rounded-xl border-4 border-black bg-white dark:border-white dark:bg-blue-300"
+        className="relative flex h-1/2 w-1/3 flex-col items-start justify-start rounded-xl border-4 border-black bg-white p-4 dark:border-white dark:bg-blue-300"
         onClick={(e) => e.stopPropagation()}
       >
         <span
@@ -18,7 +18,15 @@ export default function Popup({ content, onClose }) {
         </span>
         <h1 className="dark:text-black">{content.value}</h1>
         <p className="dark:text-black">{content.description}</p>
-        <Image src={content.icon} alt={content.value} width={150} heith={150} className='absolute bottom-0 right-1/2 translate-x-1/2' />
+        <Image
+          src={content.icon}
+          alt={content.value}
+          priority={true}
+          loading="eager"
+          width={150}
+          heith={150}
+          className="absolute bottom-0 right-1/2 translate-x-1/2"
+        />
       </div>
     </div>
   );

@@ -28,20 +28,25 @@ export default function Header() {
       <div className="flex items-center justify-between gap-4">
         <ul className="flex items-center justify-between gap-2">
           <li>
-            <a href="https://github.com" title="Github">
+            <a href="https://github.com" target="_blank" title="Github">
               <FaGithubSquare size={28} />
             </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/kevthebug/"
+              target="_blank"
               title="Linkedin"
             >
               <FaLinkedin size={28} />
             </a>
           </li>
           <li>
-            <a href="https://medium.com/" title="Medium">
+            <a
+              href="https://medium.com/@kevthefoo"
+              target="_blank"
+              title="Medium"
+            >
               <FaMedium size={28} />
             </a>
           </li>
