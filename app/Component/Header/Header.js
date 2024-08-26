@@ -34,7 +34,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/kevin-hsu-92304a323/"
+              href="https://www.linkedin.com/in/kevthebug/"
               title="Linkedin"
             >
               <FaLinkedin size={28} />

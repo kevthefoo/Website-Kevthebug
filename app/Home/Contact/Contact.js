@@ -9,29 +9,40 @@ export default function Conatct() {
   return (
     <section
       id="contact"
-      className="h-screen flex-col justify-start border-2 border-red-500 pt-16"
+      className="h-screen flex-col justify-start pb-24 pt-16"
     >
       <h1>Contact</h1>
-      <span className="text-xl text-gray-500">Get in touch with me</span>
-      <div className="flex h-full items-stretch justify-center border-2 border-blue-300">
-        <div className="flex flex-col items-stretch justify-between border-2 border-red-500">
-          <div className="flex flex-col items-center justify-center rounded-3xl border-2 border-gray-400 bg-slate-200 px-8 py-4">
-            <MdEmail className="text-3xl" />
+      <span className="text-xl text-gray-500 mb-4">Get in touch with me</span>
+      <div className="flex h-full w-full items-stretch justify-center gap-10">
+        <div className="flex w-1/5 flex-col items-stretch justify-between gap-4">
+          <a
+            href="mailto:kevthebug@gmail.com"
+            className="flex flex-grow flex-col items-center justify-center rounded-3xl border-2 border-gray-400 bg-slate-200 px-8 py-4 dark:bg-slate-800"
+          >
+            <MdEmail className="mb-2 text-3xl" />
             <h3 className="text-xl">Email</h3>
-          </div>
-          <div className="flex flex-col items-center justify-center rounded-3xl border-2 border-gray-400 bg-slate-200 px-8 py-4">
-            <FaLinkedin className="text-3xl" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kevthebug/"
+            target="_blank"
+            className="flex flex-grow flex-col items-center justify-center rounded-3xl border-2 border-gray-400 bg-slate-200 px-8 py-4 dark:bg-slate-800"
+          >
+            <FaLinkedin className="mb-2 text-3xl" />
             <h3 className="text-xl">LinkedIn</h3>
-          </div>
-          <div className="flex flex-col items-center justify-center rounded-3xl border-2 border-gray-400 bg-slate-200 px-8 py-4">
-            <FaLocationDot className="text-3xl" />
+          </a>
+          <a
+            href="https://maps.app.goo.gl/srk7XxEz989FP3Ws8"
+            target="_blank"
+            className="flex flex-grow flex-col items-center justify-center rounded-3xl border-2 border-gray-400 bg-slate-200 px-8 py-4 dark:bg-slate-800"
+          >
+            <FaLocationDot className="mb-2 text-3xl" />
             <h3 className="text-xl">Location</h3>
-          </div>
+          </a>
         </div>
 
         <form
           action=""
-          className="w-3/5 rounded-3xl border-2 border-gray-400 p-8"
+          className="w-2/5 rounded-3xl border-2 border-gray-400 p-8"
         >
           <div className="mb-8 flex flex-col items-start justify-start">
             <label htmlFor="name" className="mb-2">
@@ -67,13 +78,18 @@ export default function Conatct() {
               id="message"
               name="message"
               rows="6"
-              className="w-full rounded border-2 p-2 text-black"
+              className="form_messaage w-full rounded border-2 p-2 text-black"
               required
             ></textarea>
           </div>
 
-          <div>
-            <button type="submit">Submit</button>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="self-center rounded-2xl bg-gray-700 px-8 py-4 font-bold text-white hover:bg-gray-900 dark:bg-blue-700 dark:text-black dark:hover:bg-blue-600"
+            >
+              Submit
+            </button>
           </div>
         </form>
       </div>

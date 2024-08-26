@@ -10,7 +10,7 @@ import {
 
 export default function Services() {
   return (
-    <section id="services" className="flex-col justify-start pt-16">
+    <section id="services" className="flex-col justify-start pb-16 pt-16">
       <h1>Services</h1>
       <span className="mb-4 text-xl text-gray-500">What I can provide</span>
       <div className="grid h-full grid-cols-3 gap-20">
