@@ -12,10 +12,12 @@ export default function About() {
   const handleBubbleClick = (content) => {
     setPopupContent(content);
     setIsPopupVisible(true);
+    document.body.style.overflow = "hidden";
   };
 
   const closePopup = () => {
     setIsPopupVisible(false);
+    document.body.style.overflow = "auto";
   };
 
   return (

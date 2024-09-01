@@ -4,9 +4,9 @@ import ThemeToggle from "@/app/Component/ThemeToggle/ThemeToggle";
 
 export default function Header() {
   return (
-    <header className="fixed z-50 flex h-16 w-full items-center justify-around border-b-2 bg-white transition duration-700 ease-linear dark:bg-neutral-900 dark:text-white">
+    <header className="fixed z-50 flex h-16 w-full max-md:border-2 max-md:border-red-500 items-center justify-around border-b-2 bg-white transition duration-700 ease-linear dark:bg-neutral-900 dark:text-white">
       <div>Logo</div>
-      <nav>
+      <nav className="border-2 border-red-500 max-md:hidden">
         <ul className="flex items-center justify-between gap-4">
           <li className="hover:text-gray-500">
             <a href="#about">About</a>
