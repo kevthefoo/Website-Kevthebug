@@ -58,7 +58,9 @@ export default function Header() {
 
       <div
         className="relative z-50 hidden h-7 w-7 cursor-pointer flex-col justify-between max-md:flex"
-        onClick={() => setActive(!active)}
+        onClick={() => {
+          setActive(!active);
+        }}
       >
         <div
           className={
@@ -84,28 +86,34 @@ export default function Header() {
       <nav
         className={
           active
-            ? "fixed left-0 top-0 z-30 flex h-screen w-full items-center justify-center border-2 border-blue-500 bg-slate-300"
-            : "fixed left-full top-0 z-30 flex h-screen w-full items-center justify-center border-2 border-blue-500 bg-slate-300"
+            ? "fixed left-0 top-0 z-30 flex h-screen w-full items-center justify-center border-2 bg-white"
+            : "fixed left-full top-0 z-30 flex h-screen w-full items-center justify-center border-2 bg-white"
         }
       >
-        <ul className="mobile_menu">
-          <li>
-            <a href="#features" onClick={() => setActive(false)}>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#pricing" onClick={() => setActive(false)}>
+        <ul className="flex flex-col justify-center gap-8 text-center">
+          <li className="relative before:absolute before:right-[95px] before:top-[10px] before:h-[1px] before:w-16 before:bg-black before:content-[''] after:absolute after:left-[95px] after:top-[10px] after:h-[1px] after:w-16 after:bg-black after:content-['']">
+            <a href="#about" onClick={() => setActive(false)}>
               About
             </a>
           </li>
-          <li>
-            <a
-              href="https://discord.gg/qVVFgB9UPy"
-              target="_blank"
-              onClick={() => setActive(false)}
-            >
-              we
+          <li className="relative before:absolute before:right-[95px] before:top-[10px] before:h-[1px] before:w-16 before:bg-black before:content-[''] after:absolute after:left-[95px] after:top-[10px] after:h-[1px] after:w-16 after:bg-black after:content-['']">
+            <a href="#skills" onClick={() => setActive(false)}>
+              Skills
+            </a>
+          </li>
+          <li className="relative before:absolute before:right-[95px] before:top-[10px] before:h-[1px] before:w-16 before:bg-black before:content-[''] after:absolute after:left-[95px] after:top-[10px] after:h-[1px] after:w-16 after:bg-black after:content-['']">
+            <a href="#showcase" onClick={() => setActive(false)}>
+              Showcase
+            </a>
+          </li>
+          <li className="relative before:absolute before:right-[95px] before:top-[10px] before:h-[1px] before:w-16 before:bg-black before:content-[''] after:absolute after:left-[95px] after:top-[10px] after:h-[1px] after:w-16 after:bg-black after:content-['']">
+            <a href="#services" onClick={() => setActive(false)}>
+              Services
+            </a>
+          </li>
+          <li className="relative before:absolute before:right-[95px] before:top-[10px] before:h-[1px] before:w-16 before:bg-black before:content-[''] after:absolute after:left-[95px] after:top-[10px] after:h-[1px] after:w-16 after:bg-black after:content-['']">
+            <a href="#contact" onClick={() => setActive(false)}>
+              Contact
             </a>
           </li>
         </ul>
