@@ -12,22 +12,29 @@ export default function ThemeToggle() {
   };
 
   useEffect(() => {
+    const q = document.querySelectorAll(".toggle_input");
+    console.log(q)
+    
     if (darkMode) {
       document.body.classList.add("dark");
-      document
-        .querySelector(".pfp_image_dark")
-        .classList.remove("invisible", "opacity-0");
-      document
-        .querySelector(".pfp_image_light")
-        .classList.add("invisible", "opacity-0");
+
+      document.querySelectorAll(".pfp_image_dark").forEach((element) => {
+        element.classList.remove("invisible", "opacity-0");
+      });
+
+      document.querySelectorAll(".pfp_image_light").forEach((element) => {
+        element.classList.add("invisible", "opacity-0");
+      });
     } else {
       document.body.classList.remove("dark");
-      document
-        .querySelector(".pfp_image_light")
-        .classList.remove("invisible", "opacity-0");
-      document
-        .querySelector(".pfp_image_dark")
-        .classList.add("invisible", "opacity-0");
+
+      document.querySelectorAll(".pfp_image_light").forEach((element) => {
+        element.classList.remove("invisible", "opacity-0");
+      });
+
+      document.querySelectorAll(".pfp_image_dark").forEach((element) => {
+        element.classList.add("invisible", "opacity-0");
+      });
     }
   }, [darkMode]);
 
