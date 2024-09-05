@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithubSquare, FaMedium } from "react-icons/fa";
 import ThemeToggle from "@/app/Component/ThemeToggle/ThemeToggle";
+import Image from "next/image";
+import logo from "@/asset/logos/logo.png";
 
 export default function Header() {
   const [active, setActive] = useState(false);
@@ -20,9 +22,20 @@ export default function Header() {
 
   return (
     <header className="fixed z-50 flex h-16 w-full items-center justify-around border-b-2 bg-white transition duration-700 ease-linear max-md:justify-start dark:bg-neutral-900 dark:text-white">
-      <div className="max-md:ml-20">Logo</div>
-      <nav className="max-md:hidden">
-        <ul className="flex items-center justify-between gap-4">
+      <div className="flex h-full items-center justify-center gap-2 max-md:ml-5">
+        <Image
+          src={logo} // This makes the image fill the parent container // This ensures the image maintains its aspect ratio
+          alt="logo"
+          width={50}
+          height={50}
+          className="rounded-full"
+        />
+        <p className="select-none text-[26px] max-[992px]:text-xl">
+          Kevin Caviar
+        </p>
+      </div>
+      <nav className="max-[992px]:text-sm max-md:hidden">
+        <ul className="flex items-center justify-between gap-4 max-[992px]:gap-[12px]">
           <li className="hover:text-gray-500">
             <a href="#about">About</a>
           </li>
@@ -45,14 +58,14 @@ export default function Header() {
       <div
         className={
           active
-            ? "max-md:absolute max-md:left-[50%]  max-md:translate-x-[-50%] max-md:top-[90px] max-md:z-50 max-md:flex max-md:flex-col max-md:items-center max-md:justify-between"
-            : "flex items-center justify-between gap-4 max-md:hidden"
+            ? "max-[992px]:gap-1 max-md:absolute max-md:left-[50%] max-md:top-[90px] max-md:z-50 max-md:flex max-md:translate-x-[-50%] max-md:flex-col max-md:items-center max-md:justify-between"
+            : "flex items-center justify-between gap-4 max-[992px]:gap-1 max-md:hidden"
         }
       >
-        <ul className="flex items-center justify-between gap-2 max-md:order-1 max-md:mt-4">
+        <ul className="flex items-center justify-between gap-2 text-2xl max-[992px]:text-xl max-md:order-1 max-md:mt-4">
           <li>
             <a href="https://github.com" target="_blank" title="Github">
-              <FaGithubSquare size={28} />
+              <FaGithubSquare />
             </a>
           </li>
           <li>
@@ -61,7 +74,7 @@ export default function Header() {
               target="_blank"
               title="Linkedin"
             >
-              <FaLinkedin size={28} />
+              <FaLinkedin />
             </a>
           </li>
           <li>
@@ -70,7 +83,7 @@ export default function Header() {
               target="_blank"
               title="Medium"
             >
-              <FaMedium size={28} />
+              <FaMedium />
             </a>
           </li>
         </ul>
@@ -119,7 +132,7 @@ export default function Header() {
           <ul className="flex items-center justify-between gap-2">
             <li>
               <a href="https://github.com" target="_blank" title="Github">
-                <FaGithubSquare size={28} />
+                <FaGithubSquare  />
               </a>
             </li>
             <li>
@@ -128,7 +141,7 @@ export default function Header() {
                 target="_blank"
                 title="Linkedin"
               >
-                <FaLinkedin size={28} />
+                <FaLinkedin  />
               </a>
             </li>
             <li>
@@ -137,7 +150,7 @@ export default function Header() {
                 target="_blank"
                 title="Medium"
               >
-                <FaMedium size={28} />
+                <FaMedium  />
               </a>
             </li>
           </ul>
