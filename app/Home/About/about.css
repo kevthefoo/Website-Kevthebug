@@ -6,7 +6,7 @@
 
 .bubble {
   @apply absolute flex h-28 w-28 cursor-pointer items-center justify-center rounded-full border-4 border-black bg-blue-300 text-center font-semibold dark:border-white dark:text-black;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .bubble:hover {
@@ -16,7 +16,8 @@
 }
 
 @keyframes wiggle {
-  0%, 7% {
+  0%,
+  7% {
     transform: rotateZ(0);
   }
   15% {
@@ -34,7 +35,8 @@
   35% {
     transform: rotateZ(-4deg);
   }
-  40%, 100% {
+  40%,
+  100% {
     transform: rotateZ(0);
   }
 }
@@ -57,37 +59,25 @@
 .bubble.main {
   top: 50%;
   left: 50%;
-  /* animation: wiggle 2s linear infinite; */
 }
+
+/* ===== */
 
 .mbti {
   top: 20%;
   left: 50%;
 }
 
-.pet {
-  top: 35%;
-  left: 63%;
+.trait {
+  top: 80%;
+  left: 50%;
 }
 
-.company {
-  top: 65%;
-  left: 36.5%;
-}
+/* ===== */
 
 .food {
   top: 50%;
   left: 25%;
-}
-
-.sport {
-  top: 35%;
-  left: 36.5%;
-}
-
-.film {
-  top: 65%;
-  left: 63%;
 }
 
 .music {
@@ -95,7 +85,28 @@
   left: 75%;
 }
 
-.trait {
-  top: 80%;
-  left: 50%;
+/* ===== */
+
+.pet {
+  top: 35%;
+  left: 63%;
 }
+
+.sport {
+  top: 35%;
+  left: 37%;
+}
+
+/* ===== */
+
+.film {
+  top: 65%;
+  left: 63%;
+}
+
+.company {
+  top: 65%;
+  left: 37%;
+}
+
+/* ===== */
