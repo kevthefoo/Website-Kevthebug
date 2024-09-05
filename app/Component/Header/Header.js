@@ -62,7 +62,7 @@ export default function Header() {
             : "flex items-center justify-between gap-4 max-[992px]:gap-1 max-md:hidden"
         }
       >
-        <ul className="flex items-center justify-between gap-2 text-2xl max-[992px]:text-xl max-md:order-1 max-md:mt-4">
+        <ul className="flex items-center justify-between gap-2 text-2xl  max-md:order-1 max-md:mt-4">
           <li>
             <a href="https://github.com" target="_blank" title="Github">
               <FaGithubSquare />
