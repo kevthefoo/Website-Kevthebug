@@ -2,13 +2,11 @@ export default function HelloIcon() {
   return (
     <>
       <svg
-        width="36px"
-        height="36px"
         viewBox="0 0 36 36"
         aria-hidden="true"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
-        className="iconify iconify--twemoji"
+        className="iconify iconify--twemoji h-8 max-[992px]:h-6"
         preserveAspectRatio="xMidYMid meet"
       >
         <ellipse

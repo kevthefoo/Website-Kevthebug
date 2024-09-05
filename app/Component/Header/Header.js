@@ -24,7 +24,7 @@ export default function Header() {
     <header className="fixed z-50 flex h-16 w-full items-center justify-around border-b-2 bg-white transition duration-700 ease-linear max-md:justify-start dark:bg-neutral-900 dark:text-white">
       <div className="flex h-full items-center justify-center gap-2 max-md:ml-5">
         <Image
-          src={logo} // This makes the image fill the parent container // This ensures the image maintains its aspect ratio
+          src={logo}
           alt="logo"
           width={50}
           height={50}
