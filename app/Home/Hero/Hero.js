@@ -6,8 +6,8 @@ import "./hero.css";
 
 export default function Hero() {
   return (
-    <section className="h-screen items-center justify-evenly border-4 border-blue-300 pt-20 max-md:flex-col max-md:justify-evenly max-md:gap-4">
-      <div className="php_image_container relative h-[500px] w-[300px] border-2 border-red-300 max-[992px]:h-[400px] max-[992px]:w-[250px] max-md:h-[200px] max-md:w-[200px] max-[496px]:h-[150px] max-[496px]:w-[150px] max-md:rounded-full">
+    <section className="h-screen items-center justify-evenly   pt-20 max-md:flex-col max-md:justify-evenly max-md:gap-4">
+      <div className="php_image_container relative h-[500px] w-[300px]  max-[992px]:h-[400px] max-[992px]:w-[250px] max-md:h-[200px] max-md:w-[200px] max-[496px]:h-[150px] max-[496px]:w-[150px] max-md:rounded-full">
         <Image
           priority={true}
           loading="eager"
@@ -26,7 +26,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="flex w-1/2 flex-col border-2 border-red-300 max-[992px]:text-[14px] max-md:h-auto max-md:w-full">
+      <div className="flex w-1/2 flex-col   max-[992px]:text-[14px] max-md:h-auto max-md:w-full">
         <h1 className="mb-4 flex items-center justify-start gap-x-3.5 max-[992px]:text-xl max-[496px]:text-base	">
           Kevin Caviar
           <HelloIcon />
@@ -42,7 +42,7 @@ export default function Hero() {
         </p>
         <a
           href="/#about"
-          className="self-center rounded-2xl bg-gray-700 px-8 py-4 font-bold text-white  hover:bg-gray-900 max-[992px]:px-4 max-[992px]:py-2 max-[992px]:text-[12px] dark:bg-blue-700 dark:text-black dark:hover:bg-blue-600"
+          className="self-center rounded-2xl bg-gray-700 px-8 py-4 font-bold text-white  hover:bg-gray-900 max-[992px]:px-4 max-[992px]:py-2 max-[992px]:rounded-xl max-[992px]:text-[12px] dark:bg-blue-700 dark:text-black dark:hover:bg-blue-600"
         >
           Learn More
         </a>
