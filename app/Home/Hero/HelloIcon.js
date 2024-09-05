@@ -6,7 +6,7 @@ export default function HelloIcon() {
         aria-hidden="true"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
-        className="iconify iconify--twemoji h-8 max-[992px]:h-6"
+        className="iconify iconify--twemoji h-8 max-[992px]:h-6 max-[496px]:h-5"
         preserveAspectRatio="xMidYMid meet"
       >
         <ellipse
