@@ -8,7 +8,7 @@ export default function Skills() {
     >
       <h1>Skills</h1>
       <span className="mb-4 text-xl text-gray-500">What I got in my bag</span>
-      <div className="grid h-full w-full grid-cols-[30%_30%] justify-center gap-8 border-2 border-blue-500">
+      <div className="grid h-full w-4/5 grid-cols-2 justify-center gap-8 border-2 border-blue-500 max-[992px]:w-full max-[992px]:text-[14px] max-md:grid-cols-1">
         <div className="flex flex-col rounded-xl border-2 border-gray-400 bg-slate-200 p-4 dark:bg-slate-800">
           <h3 className="mb-4 self-center text-xl">Frontend</h3>
           <div>
