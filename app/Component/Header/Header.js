@@ -58,8 +58,8 @@ export default function Header() {
       <div
         className={
           active
-            ? "max-[992px]:gap-1 max-md:absolute max-md:left-[50%] max-md:top-[90px] max-md:z-50 max-md:flex max-md:translate-x-[-50%] max-md:flex-col max-md:items-center max-md:justify-between"
-            : "flex items-center justify-between gap-4 max-[992px]:gap-1 max-md:hidden"
+            ? "border-2 border-red-500 max-[992px]:gap-4 max-md:absolute max-md:left-[50%] max-md:top-[300%] max-md:z-50 max-md:flex max-md:translate-x-[-50%] max-md:flex-col max-md:items-center max-md:justify-between"
+            : "flex items-center justify-between gap-4 max-[992px]:gap-4 max-md:hidden"
         }
       >
         <ul className="flex items-center justify-between gap-2 text-2xl max-md:order-1">
@@ -127,35 +127,6 @@ export default function Header() {
             : "fixed left-full top-0 z-30 flex h-screen w-full items-center justify-center bg-white transition duration-700 ease-linear dark:bg-neutral-900 dark:text-white"
         }
       >
-        {/* <div className="absolute top-[70px] flex flex-col items-center justify-between gap-4">
-          <ThemeToggle />
-          <ul className="flex items-center justify-between gap-2">
-            <li>
-              <a href="https://github.com" target="_blank" title="Github">
-                <FaGithubSquare  />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/kevthebug/"
-                target="_blank"
-                title="Linkedin"
-              >
-                <FaLinkedin  />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://medium.com/@kevthefoo"
-                target="_blank"
-                title="Medium"
-              >
-                <FaMedium  />
-              </a>
-            </li>
-          </ul>
-        </div> */}
-
         <nav className={active ? "" : ""}>
           <ul className="flex flex-col justify-center gap-8 text-center">
             <li className="relative before:absolute before:right-[95px] before:top-[10px] before:h-[1px] before:w-16 before:bg-black before:content-[''] after:absolute after:left-[95px] after:top-[10px] after:h-[1px] after:w-16 after:bg-black after:content-[''] dark:before:bg-white dark:after:bg-white">
