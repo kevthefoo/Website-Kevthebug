@@ -58,7 +58,7 @@ export default function Header() {
       <div
         className={
           active
-            ? "max-[992px]:gap-4 max-md:absolute max-md:left-[50%] max-md:top-[300%] max-md:z-50 max-md:flex max-md:translate-x-[-50%] max-md:flex-col max-md:items-center max-md:justify-between"
+            ? "max-[992px]:gap-4 max-md:absolute max-md:left-[50%] max-md:top-[100%] max-md:z-50 max-md:flex max-md:translate-x-[-50%] max-md:flex-col max-md:items-center max-md:justify-between"
             : "flex items-center justify-between gap-4 max-[992px]:gap-4 max-md:hidden"
         }
       >

@@ -16,7 +16,7 @@ export default function Services() {
     >
       <h1>Services</h1>
       <span className="mb-4 text-xl text-gray-500">What I can provide</span>
-      <div className="grid h-full grid-cols-3 gap-20 border-2 border-blue-300 text-center max-[992px]:gap-10 max-md:grid-cols-2">
+      <div className="grid h-full grid-cols-3 gap-20 text-center max-[992px]:gap-10 max-md:grid-cols-2">
         <div className="flex aspect-square flex-col items-center justify-center rounded-3xl border-2 border-gray-400 bg-slate-200 p-2 dark:border-white dark:bg-black">
           <FaReact className="mb-4 text-5xl" />
           <h3>Website Development</h3>
