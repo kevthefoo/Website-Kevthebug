@@ -22,10 +22,11 @@ body {
 
 section {
   padding: 0 6rem;
-  @apply max-[496px]:px-4;
+  @apply max-[496px]:px-4  border-2 border-red-300 ;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 h1 {
