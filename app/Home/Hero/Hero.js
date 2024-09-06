@@ -6,7 +6,7 @@ import "./hero.css";
 
 export default function Hero() {
   return (
-    <section className="h-screen items-center justify-evenly pt-20 max-md:flex-col max-md:justify-center max-md:gap-8 max-md:text-center">
+    <section className="min-h-screen items-center justify-evenly pt-20 max-md:flex-col max-md:justify-center max-md:gap-8 max-md:text-center">
       <div className="php_image_container relative h-[500px] w-[300px] max-[992px]:h-[400px] max-[992px]:w-[250px] max-md:h-[300px] max-md:w-[300px] max-md:rounded-full max-[496px]:h-[200px] max-[496px]:w-[200px]">
         <Image
           priority={true}
@@ -26,8 +26,8 @@ export default function Hero() {
         />
       </div>
 
-      <div className="flex w-1/2 flex-col max-[992px]:text-[14px] max-md:h-auto max-md:w-full">
-        <h1 className="mb-4 flex items-center justify-center gap-x-3.5 max-[992px]:text-xl">
+      <div className="flex w-1/2 flex-col max-[992px]:text-[14px] max-md:h-auto max-md:w-full max-md:items-center">
+        <h1 className="mb-4 flex items-center gap-x-3.5 max-[992px]:text-xl">
           Kevin Caviar
           <HelloIcon />
         </h1>
