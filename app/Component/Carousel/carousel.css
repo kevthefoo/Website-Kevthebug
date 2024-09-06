@@ -6,9 +6,8 @@
 
 .swiper-slide {
   /* width: 620px;
-  height: 345px;
-  @apply max-sm:h-[225px] max-sm:w-[400px] max-[480px]:h-[200px] max-[480px]:w-[350px]; */
-  @apply aspect-video;
+  height: 345px; */
+  @apply aspect-video w-[70%]; ;
 }
 
 .swiper-slide img {
