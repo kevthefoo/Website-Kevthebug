@@ -9,7 +9,7 @@ export default function Popup({ content, onClose }) {
       onClick={onClose}
     >
       <div
-        className="relative flex h-1/2 w-[500px] flex-col items-start justify-start rounded-xl border-4 border-black bg-white p-4 max-md:h-2/5 max-md:w-[300px] dark:border-white dark:bg-blue-300"
+        className="relative flex h-1/2 w-[500px] flex-col items-start justify-start rounded-xl border-4 border-black bg-white p-4 max-md:h-[300px] max-md:w-[300px] dark:border-white dark:bg-blue-300"
         onClick={(e) => e.stopPropagation()}
       >
         <span
