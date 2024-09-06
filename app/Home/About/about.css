@@ -5,7 +5,7 @@
 }
 
 .bubble {
-  @apply absolute flex h-28 w-28 cursor-pointer items-center justify-center rounded-full border-4 border-black bg-blue-300 text-center font-semibold dark:border-white dark:text-black;
+  @apply absolute flex h-28 w-28 cursor-pointer items-center justify-center rounded-full border-4 border-black bg-blue-300 text-center font-semibold max-[992px]:text-[14px] max-md:h-20 max-md:w-20 dark:border-white dark:text-black;
   transform: translate(-50%, -50%);
 }
 

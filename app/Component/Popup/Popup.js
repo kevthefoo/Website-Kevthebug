@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 
@@ -9,7 +9,7 @@ export default function Popup({ content, onClose }) {
       onClick={onClose}
     >
       <div
-        className="relative flex h-1/2 w-1/3 flex-col items-start justify-start rounded-xl border-4 border-black bg-white p-4 dark:border-white dark:bg-blue-300"
+        className="relative flex h-1/2 w-[500px] flex-col items-start justify-start rounded-xl border-4 border-black bg-white p-4 max-md:h-2/5 max-md:w-[300px] dark:border-white dark:bg-blue-300"
         onClick={(e) => e.stopPropagation()}
       >
         <span
@@ -18,16 +18,16 @@ export default function Popup({ content, onClose }) {
         >
           &times;
         </span>
-        <h1 className="dark:text-black">{content.value}</h1>
-        <p className="dark:text-black">{content.description}</p>
+        <h1 className="max-md:text-xl dark:text-black">{content.value}</h1>
+        <p className="max-md:text-[14px] max-md:leading-6 dark:text-black">
+          {content.description}
+        </p>
         <Image
           src={content.icon}
           alt={content.value}
           priority={true}
           loading="eager"
-          width={150}
-          heith={150}
-          className="absolute bottom-0 right-1/2 translate-x-1/2"
+          className="absolute bottom-0 right-1/2 h-[150px] w-[150px] translate-x-1/2 max-md:h-[100px] max-md:w-[100px]"
         />
       </div>
     </div>

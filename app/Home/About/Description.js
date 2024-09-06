@@ -29,23 +29,26 @@ const descriptionData = {
   },
   company: {
     value: "Disney",
-    description: "When I feel down, I always listen their music, and it reminds me of my happy childhood. One of my dream is to visit every Disneyland in the world!",
+    description:
+      "When I feel down, I always listen their music, and it reminds me of my happy childhood. One of my dream is to visit every Disneyland in the world!",
     icon: disney,
   },
   food: {
     value: "Sushi",
-    description: "Nigiri! Sashimi! Maki! Temaki! Uramaki! Inari! Oshi! Gunkan! Ebi! Tempura! Give me more until I choke!",
+    description:
+      "Nigiri! Sashimi! Maki! Temaki! Uramaki! Inari! Oshi! Gunkan! Ebi! Tempura! Give me more until I choke!",
     icon: sushi,
   },
   sport: {
     value: "NBA",
     description:
-      "Inherited from my grandpa, I have been watching NBA games for over 20 years. Paul Pierce, Kevin Garnett, and Rajon Rondo are my favorite Celtics. Why no Ray? He sucks!",
+      "Inherited from my grandpa, I have been watching NBA games for over 20 years. Paul Pierce, Kevin Garnett, and Rajon Rondo are my favorite Celtics.",
     icon: basketball,
   },
   film: {
     value: "Movies",
-    description: "Interstellar is one of my favorite films, actually I love all Christopher Nolan's movies. I am a big fan of him!",
+    description:
+      "Interstellar is one of my favorite films, actually I love all Christopher Nolan's movies. I am a big fan of him!",
     icon: interstellar,
   },
   music: {
@@ -56,7 +59,8 @@ const descriptionData = {
   },
   trait: {
     value: "Creativity",
-    description: "One of my strengths is creativity. I always like to fix problems in a surprising way. Boring is the last thing I want to be!",
+    description:
+      "One of my strengths is creativity. I always like to fix problems in a surprising way. Boring is the last thing I want to be!",
     icon: creativity,
   },
 };
