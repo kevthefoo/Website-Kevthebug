@@ -1,6 +1,6 @@
 import Image from "next/image";
-import pfp from "@/asset/materials/pfp.png";
-import pfp_3 from "@/asset/materials/pfp_3.png";
+import pfp_bright from "@/asset/materials/pfp_bright.png";
+import pfp_dark from "@/asset/materials/pfp_dark.png";
 import HelloIcon from "./HelloIcon";
 import "./hero.css";
 
@@ -12,7 +12,7 @@ export default function Hero() {
           priority={true}
           loading="eager"
           placeholder="empty"
-          src={pfp}
+          src={pfp_bright}
           alt="Kevin Caviar"
           className="pfp_image_light absolute h-full w-full rounded-3xl object-cover max-md:rounded-full"
         />
@@ -20,7 +20,7 @@ export default function Hero() {
           priority={true}
           loading="eager"
           placeholder="empty"
-          src={pfp_3}
+          src={pfp_dark}
           alt="Kevin Caviar"
           className="pfp_image_dark invisible absolute h-full w-full rounded-3xl object-cover opacity-0 max-md:rounded-full"
         />
