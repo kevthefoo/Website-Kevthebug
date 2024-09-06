@@ -58,7 +58,7 @@ export default function Header() {
       <div
         className={
           active
-            ? "max-[992px]:gap-4 max-md:absolute max-md:left-[50%] max-md:top-[100%] max-md:z-50 max-md:flex max-md:translate-x-[-50%] max-md:flex-col max-md:items-center max-md:justify-between"
+            ? "max-[992px]:gap-4 max-md:absolute max-md:left-[50%] max-md:top-[200px] max-md:z-50 max-md:flex max-md:translate-x-[-50%] max-md:flex-col max-md:items-center max-md:justify-between"
             : "flex items-center justify-between gap-4 max-[992px]:gap-4 max-md:hidden"
         }
       >
@@ -123,12 +123,12 @@ export default function Header() {
       <div
         className={
           active
-            ? "fixed left-0 top-0 z-30 flex h-screen w-full flex-col items-center justify-center bg-white transition duration-700 ease-linear dark:bg-neutral-900 dark:text-white"
+            ? "fixed left-0 top-0 z-30 flex h-screen w-full flex-col items-center justify-start pt-[300px]  bg-white transition duration-700 ease-linear dark:bg-neutral-900 dark:text-white"
             : "fixed left-full top-0 z-30 flex h-screen w-full items-center justify-center bg-white transition duration-700 ease-linear dark:bg-neutral-900 dark:text-white"
         }
       >
         <nav className={active ? "" : ""}>
-          <ul className="flex flex-col justify-center gap-8 text-center">
+          <ul className="flex flex-col justify-center  gap-8 text-center">
             <li className="relative before:absolute before:right-[95px] before:top-[10px] before:h-[1px] before:w-16 before:bg-black before:content-[''] after:absolute after:left-[95px] after:top-[10px] after:h-[1px] after:w-16 after:bg-black after:content-[''] dark:before:bg-white dark:after:bg-white">
               <a href="#about" onClick={() => setActive(false)}>
                 About
