@@ -1,12 +1,12 @@
-import goodness from "@/asset/materials/goodness.png";
-import dalmatian from "@/asset/materials/dalmatian.png";
-import sushi from "@/asset/materials/sushi.png";
-import piano from "@/asset/materials/piano.png";
-import basketball from "@/asset/materials/basketball.png";
-import disney from "@/asset/materials/disney.png";
-import intp from "@/asset/materials/intp.png";
-import creativity from "@/asset/materials/creativity.png";
-import interstellar from "@/asset/materials/interstellar.png";
+import goodness from "@/asset/materials/popups/goodness.png";
+import dalmatian from "@/asset/materials/popups/dalmatian.png";
+import sushi from "@/asset/materials/popups/sushi.png";
+import piano from "@/asset/materials/popups/piano.png";
+import basketball from "@/asset/materials/popups/basketball.png";
+import disney from "@/asset/materials/popups/disney.png";
+import intp from "@/asset/materials/popups/intp.png";
+import creativity from "@/asset/materials/popups/creativity.png";
+import interstellar from "@/asset/materials/popups/interstellar.png";
 
 const descriptionData = {
   main: {

@@ -4,10 +4,10 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import meetjohnny from "@/asset/materials/meetjohnny.png";
-import ballersbar from "@/asset/materials/ballersbar.png";
-import bitanan from "@/asset/materials/bitanan.png";
-import sinceresthetic from "@/asset/materials/sinceresthetic.png";
+import meetjohnny from "@/asset/materials/showcase/meetjohnny.png";
+import ballersbar from "@/asset/materials/showcase/ballersbar.png";
+import bitanan from "@/asset/materials/showcase/bitanan.png";
+import sinceresthetic from "@/asset/materials/showcase/sinceresthetic.png";
 
 // Import Swiper styles
 import "swiper/css";

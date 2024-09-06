@@ -1,6 +1,6 @@
 import Image from "next/image";
-import pfp_bright from "@/asset/materials/pfp_bright.png";
-import pfp_dark from "@/asset/materials/pfp_dark.png";
+import pfp_bright from "@/asset/materials/pfp/pfp_bright.png";
+import pfp_dark from "@/asset/materials/pfp/pfp_dark.png";
 import HelloIcon from "./HelloIcon";
 import "./hero.css";
 

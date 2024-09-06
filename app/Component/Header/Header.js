@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithubSquare, FaMedium } from "react-icons/fa";
 import ThemeToggle from "@/app/Component/ThemeToggle/ThemeToggle";
 import Image from "next/image";
-import logo from "@/asset/logos/logo.png";
+import logo from "@/asset/materials/logo/logo.png";
 
 export default function Header() {
   const [active, setActive] = useState(false);
