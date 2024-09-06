@@ -6,8 +6,8 @@ import "./hero.css";
 
 export default function Hero() {
   return (
-    <section className="h-screen items-center justify-evenly  pt-20 max-md:flex-col max-md:justify-center max-md:text-center max-md:gap-8">
-      <div className="php_image_container relative h-[500px] w-[300px] max-[992px]:h-[400px] max-[992px]:w-[250px] max-md:h-[200px] max-md:w-[200px] max-md:rounded-full max-[496px]:h-[150px] max-[496px]:w-[150px]">
+    <section className="h-screen items-center justify-evenly pt-20 max-md:flex-col max-md:justify-center max-md:gap-8 max-md:text-center">
+      <div className="php_image_container relative h-[500px] w-[300px] max-[992px]:h-[400px] max-[992px]:w-[250px] max-md:h-[300px] max-md:w-[300px] max-md:rounded-full max-[496px]:h-[200px] max-[496px]:w-[200px]">
         <Image
           priority={true}
           loading="eager"
