@@ -11,7 +11,7 @@ export default function BubbleReveal({
   yTranslate = 150,
 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
+  const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
   useEffect(() => {
@@ -29,8 +29,8 @@ export default function BubbleReveal({
       onClick={onClick}
       ref={ref}
       variants={{
-        hidden: { opacity: 0, x: -56, y: 44 },
-        visible: { opacity: 1, x: -56, y: -56 },
+        hidden: { opacity: 0, x: "-50%", y: 44 },
+        visible: { opacity: 1, x:"-50%", y: -56 },
       }}
       initial="hidden"
       animate={mainControls}
