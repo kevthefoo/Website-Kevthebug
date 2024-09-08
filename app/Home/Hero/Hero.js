@@ -3,7 +3,7 @@ import pfp_bright from "@/asset/materials/pfp/pfp_bright.png";
 import pfp_dark from "@/asset/materials/pfp/pfp_dark.png";
 import HelloIcon from "./HelloIcon";
 import "./hero.css";
-
+import Link from "next/link";
 import Reveal from "@/app/Component/Reveal/Reveal";
 
 export default function Hero() {
@@ -28,15 +28,21 @@ export default function Hero() {
         />
       </div>
 
-      <div className="lopo flex w-1/2 flex-col max-[992px]:text-[14px] max-md:h-auto max-md:w-full max-md:items-center">
-        <h1 className="mb-4 flex items-center gap-x-3.5 max-[992px]:text-xl">
-          Kevin Caviar
-          <HelloIcon />
-        </h1>
-        <h3 className="mb-4">
-          <i>A Programming Enthusiasm</i>
-        </h3>
-        <Reveal>
+      <div className="flex w-1/2 flex-col max-[992px]:text-[14px] max-md:h-auto max-md:w-full max-md:items-center">
+        <Reveal className="border-2 border-blue-300">
+          <h1 className="mb-4 flex items-center gap-x-3.5 max-[992px]:text-xl max-md:justify-center">
+            Kevin Caviar
+            <HelloIcon />
+          </h1>
+        </Reveal>
+
+        <Reveal delayTime={0.75}>
+          <h3 className="mb-4">
+            <i>A Programming Enthusiasm</i>
+          </h3>
+        </Reveal>
+
+        <Reveal delayTime={1}>
           <p className="mb-16 max-[992px]:mb-10 max-[992px]:text-[14px] max-md:mb-4 max-md:leading-6">
             I found that programming is my destiny when I was 27 then I devoted
             in it with all my heart. Sometimes I wish I could learn programming
@@ -44,12 +50,15 @@ export default function Hero() {
             attractive to me. Life is like a box of chocolate, isn&#39;t it?
           </p>
         </Reveal>
-        <a
-          href="/#about"
-          className="self-center rounded-2xl bg-gray-700 px-8 py-4 font-bold text-white hover:bg-gray-900 max-[992px]:rounded-xl max-[992px]:px-4 max-[992px]:py-2 max-[992px]:text-[12px] dark:bg-blue-700 dark:text-black dark:hover:bg-blue-600"
-        >
-          Learn More
-        </a>
+
+        <Reveal delayTime={1.25}>
+          <Link
+            href="/#about"
+            className="rounded-2xl self-center bg-gray-700 px-8 py-4 font-bold text-white hover:bg-gray-900 max-[992px]:rounded-xl max-[992px]:px-4 max-[992px]:py-2 max-[992px]:text-[12px] dark:bg-blue-700 dark:text-black dark:hover:bg-blue-600"
+          >
+            Learn More
+          </Link>
+        </Reveal>
       </div>
     </section>
   );
