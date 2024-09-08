@@ -52,32 +52,21 @@ export default function App() {
       >
         <SwiperSlide>
           <a href="https://meetjohnny.com" target="_blank">
-            <Image src={meetjohnny} alt="showcase_1" />
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <a
-            href="https://www.youtube.com/@ballersbarbasketballclips"
-            target="_blank"
-          >
-            <Image src={ballersbar} alt="showcase_2" />
+            <Image src={meetjohnny} alt="showcase_meetjohnny" />
           </a>
         </SwiperSlide>
 
         <SwiperSlide>
           <a href="https://bitanan-demo.vercel.app/" target="_blank">
-            <Image src={bitanan} alt="showcase_3" />
+            <Image src={bitanan} alt="showcase_bitanan" />
           </a>
         </SwiperSlide>
 
         <SwiperSlide>
           <a href="https://sinceresthetic.com/" target="_blank">
-            <Image src={sinceresthetic} alt="showcase_" />
+            <Image src={sinceresthetic} alt="showcase_sinceresthetic" />
           </a>
         </SwiperSlide>
-
-        <SwiperSlide></SwiperSlide>
       </Swiper>
     </>
   );
