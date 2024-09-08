@@ -10,7 +10,7 @@ export default function Conatct() {
     <section id="contact" className="h-auto flex-col justify-start pb-24 pt-16">
       <h1>Contact</h1>
 
-      <span className="mb-4 text-xl text-gray-500">Get in touch with me</span>
+      <span className="mb-12 text-xl text-gray-500">Get in touch with me</span>
 
       <div className="flex h-full w-full items-stretch justify-center gap-10 max-sm:flex-col">
         <div className="flex flex-col items-stretch justify-between gap-4 max-sm:flex-row max-sm:justify-center max-sm:gap-2">

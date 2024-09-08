@@ -7,7 +7,7 @@ export default function Showcase() {
       className="flex-col justify-start pb-16 pt-16"
     >
       <h1>Showcase</h1>
-      <span className="mb-4 text-xl text-gray-500">My Highlight Projects</span>
+      <span className="mb-12 text-xl text-gray-500">My Highlight Projects</span>
       <Carousel />
     </section>
   );

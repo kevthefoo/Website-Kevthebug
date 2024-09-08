@@ -17,9 +17,9 @@ export default function Services() {
       className="min-f-screen flex-col justify-start pb-16 pt-16"
     >
       <h1>Services</h1>
-      <span className="mb-4 text-xl text-gray-500">What I can provide</span>
+      <span className="mb-12 text-xl text-gray-500">What I can provide</span>
       <Reveal xTranslate={-300} yTranslate={0}>
-        <div className="grid mx-auto h-full grid-cols-3 gap-20 text-center max-[992px]:gap-10 max-md:grid-cols-2">
+        <div className="grid mx-auto h-full grid-cols-3 gap-10 text-center max-[992px]:gap-10 max-md:grid-cols-2">
           <div className="flex aspect-square flex-col items-center justify-center rounded-3xl border-2 border-gray-400 bg-slate-200 p-2 dark:border-white dark:bg-black">
             <FaReact className="mb-4 text-5xl" />
             <h3>Website Development</h3>

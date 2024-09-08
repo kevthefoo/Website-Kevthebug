@@ -51,55 +51,55 @@
 }
 
 .bubble.main {
-  top: 50%;
+  top: 40%;
   left: 50%;
 }
 
 /* ===== */
 
 .mbti {
-  top: 20%;
+  top: 10%;
   left: 50%;
 }
 
 .trait {
-  top: 80%;
+  top: 70%;
   left: 50%;
 }
 
 /* ===== */
 
 .food {
-  top: 50%;
+  top: 40%;
   left: 25%;
 }
 
 .music {
-  top: 50%;
+  top: 40%;
   left: 75%;
 }
 
 /* ===== */
 
 .pet {
-  top: 35%;
+  top: 25%;
   left: 63%;
 }
 
 .sport {
-  top: 35%;
+  top: 25%;
   left: 37%;
 }
 
 /* ===== */
 
 .film {
-  top: 65%;
+  top: 55%;
   left: 63%;
 }
 
 .company {
-  top: 65%;
+  top: 55%;
   left: 37%;
 }
 

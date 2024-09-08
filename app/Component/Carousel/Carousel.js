@@ -48,7 +48,6 @@ export default function App() {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-        className="mySwiper"
       >
         <SwiperSlide>
           <a href="https://meetjohnny.com" target="_blank">
