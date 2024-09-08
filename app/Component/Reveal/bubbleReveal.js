@@ -11,7 +11,7 @@ export default function BubbleReveal({
   yTranslate = 150,
 }) {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, {once: true});
   const mainControls = useAnimation();
 
   useEffect(() => {

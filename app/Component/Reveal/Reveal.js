@@ -23,8 +23,8 @@ export default function Reveal({
 
   return (
     <motion.div
-      ref={ref}
-      className="flex h-full w-full flex-col overflow-hidden "
+      ref={(ref, { once: true })}
+      className="flex h-full w-full flex-col overflow-hidden"
       variants={{
         hidden: { opacity: 0, x: xTranslate, y: yTranslate },
         visible: { opacity: 1, x: 0, y: 0 },
