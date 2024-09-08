@@ -4,7 +4,8 @@ import { useState } from "react";
 import "./about.css";
 import Popup from "@/app/Component/Popup/Popup";
 import descriptionData from "./Description";
-import Reveal from "@/app/Component/Reveal/Reveal";
+
+import BubbleReveal from "@/app/Component/Reveal/bubbleReveal";
 
 export default function About() {
   const [popupContent, setPopupContent] = useState("");
@@ -25,16 +26,16 @@ export default function About() {
     <section id="about" className="h-screen flex-col justify-start pt-16">
       <h1>About Me</h1>
       <span className="text-xl text-gray-500">What I am made of</span>
-      <div className="bubble_container relative">
-        {Object.keys(descriptionData).map((key) => (
-          <Reveal yTranslate={300} key={key}>
-            <div
-              className={`bubble ${key}`}
-              onClick={() => handleBubbleClick(descriptionData[key])}
-            >
-              {descriptionData[key].value}
-            </div>
-          </Reveal>
+      <div className="relative h-full w-full">
+        {Object.keys(descriptionData).map((key, index) => (
+          <BubbleReveal
+            key={key}
+            delayTime={index * 0.3}
+            className={`bubble ${key} `}
+            onClick={() => handleBubbleClick(descriptionData[key])}
+          >
+            {descriptionData[key].value}
+          </BubbleReveal>
         ))}
       </div>
       {isPopupVisible && <Popup content={popupContent} onClose={closePopup} />}
