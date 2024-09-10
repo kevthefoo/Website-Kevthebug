@@ -62,7 +62,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <a href="https://sinceresthetic.com/" target="_blank">
+          <a href="https://website-sinceresthetic.vercel.app/" target="_blank">
             <Image src={sinceresthetic} alt="showcase_sinceresthetic" />
           </a>
         </SwiperSlide>
