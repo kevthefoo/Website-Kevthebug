@@ -56,14 +56,14 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <a href="https://bitanan-demo.vercel.app/" target="_blank">
-            <Image src={bitanan} alt="showcase_bitanan" />
+          <a href="https://sinceresthetic.co/" target="_blank">
+            <Image src={sinceresthetic} alt="showcase_sinceresthetic" />
           </a>
         </SwiperSlide>
 
         <SwiperSlide>
-          <a href="https://website-sinceresthetic.vercel.app/" target="_blank">
-            <Image src={sinceresthetic} alt="showcase_sinceresthetic" />
+          <a href="https://bitanan-demo.vercel.app/" target="_blank">
+            <Image src={bitanan} alt="showcase_bitanan" />
           </a>
         </SwiperSlide>
       </Swiper>
