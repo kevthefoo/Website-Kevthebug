@@ -30,7 +30,7 @@ export default function About() {
         {Object.keys(descriptionData).map((key, index) => (
           <BubbleReveal
             key={key}
-            delayTime={index * 0.15}
+            delayTime={index * 0.1}
             className={`bubble ${key} `}
             onClick={() => handleBubbleClick(descriptionData[key])}
           >
