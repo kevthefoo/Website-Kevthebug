@@ -110,6 +110,10 @@ export default function Skills() {
             <h3 className="mb-4 self-center text-xl">Others</h3>
             <div>
               <ul className="grid grid-flow-col grid-cols-2 grid-rows-4 items-center justify-center gap-4">
+              <li className="flex items-center justify-start gap-1">
+                  <HiAcademicCap />
+                  Linux Command
+                </li>
                 <li className="flex items-center justify-start gap-1">
                   <HiAcademicCap />
                   Figma
