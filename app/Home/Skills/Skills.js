@@ -56,7 +56,7 @@ export default function Skills() {
                 </li>
                 <li className="flex items-center justify-start gap-1">
                   <HiAcademicCap />
-                  Express. js
+                  Express.js
                 </li>
                 <li className="flex items-center justify-start gap-1">
                   <HiAcademicCap />
