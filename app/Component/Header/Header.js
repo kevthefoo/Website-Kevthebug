@@ -64,7 +64,7 @@ export default function Header() {
       >
         <ul className="flex items-center justify-between gap-2 text-2xl max-md:order-1">
           <li>
-            <a href="https://github.com" target="_blank" title="Github">
+            <a href="https://github.com/kevthefoo" target="_blank" title="Github">
               <FaGithubSquare />
             </a>
           </li>
